@@ -1,0 +1,15 @@
+$ python checks/check_difficulty.py "C:\My projects\Amzon KDP\projects\mystery_logic_puzzle\MLP-0001"
+exit=0
+
+[PASS] C01: declared 'easy' = measured (method=propagation_only rounds=1 cs_depth=None post_branch=0 direct=0.667 redundant=0.4)
+[PASS] C02: declared 'easy' = measured (method=propagation_only rounds=1 cs_depth=None post_branch=0 direct=0.667 redundant=0.0)
+[PASS] C03: declared 'easy' = measured (method=propagation_only rounds=1 cs_depth=None post_branch=0 direct=0.667 redundant=0.0)
+[PASS] C04: declared 'easy' = measured (method=propagation_only rounds=1 cs_depth=None post_branch=0 direct=0.667 redundant=0.0)
+[PASS] C05: declared 'medium' = measured (method=propagation_only rounds=2 cs_depth=None post_branch=0 direct=0.333 redundant=0.0)
+[PASS] C06: declared 'medium' = measured (method=propagation_only rounds=2 cs_depth=None post_branch=0 direct=0.25 redundant=0.0)
+[PASS] C07: declared 'medium' = measured (method=propagation_only rounds=2 cs_depth=None post_branch=0 direct=0.333 redundant=0.1)
+[PASS] C08: declared 'medium' = measured (method=propagation_only rounds=2 cs_depth=None post_branch=0 direct=0.25 redundant=0.25)
+[PASS] C09: declared 'hard' = measured (method=case_split rounds=1 cs_depth=3 post_branch=36 direct=0.0 redundant=0.1)
+[PASS] C10: declared 'hard' = measured (method=case_split rounds=1 cs_depth=2 post_branch=24 direct=0.0 redundant=0.0)
+== difficulty calibration: 0 failure(s) ==
+

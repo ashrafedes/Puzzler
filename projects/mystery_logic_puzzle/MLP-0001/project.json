@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "project_id": "MLP-0001",
+  "factory_id": "MYSTERY_FACTORY",
+  "factory_slug": "mystery_logic_puzzle",
+  "factory_version": "1.0.0",
+  "title": "Ten Sharp Cases",
+  "created": "2026-11-27T03:09:48",
+  "updated": "2026-11-27T03:48:15",
+  "stage": "INTAKE",
+  "spec": {
+    "title": "Ten Sharp Cases",
+    "target_reader": "adult logic-puzzle solvers",
+    "puzzle_count": 10,
+    "categories": [
+      {
+        "name": "theft",
+        "type": "grid_logic",
+        "count": 4
+      },
+      {
+        "name": "espionage",
+        "type": "grid_logic",
+        "count": 3
+      },
+      {
+        "name": "smuggling",
+        "type": "grid_logic",
+        "count": 3
+      }
+    ],
+    "difficulty_distribution": {
+      "easy": 4,
+      "medium": 4,
+      "hard": 2
+    },
+    "organization": "by_difficulty",
+    "explanation_depth": "step_by_step",
+    "include_hints": true,
+    "trim_size": "6x9",
+    "quality": {
+      "near_dup_jaccard": 0.75,
+      "name_overlap_warn": 0.5
+    }
+  },
+  "spec_complete": true,
+  "ledger": [],
+  "artifacts": {},
+  "gates": {
+    "spec_valid": {
+      "class": "CODE",
+      "status": "pass",
+      "ran_at": "2026-11-27T03:48:13",
+      "log": "qc\\gates\\spec_valid_1795740493.log"
+    },
+    "puzzles_validated": {
+      "class": "CODE",
+      "status": "pass",
+      "ran_at": "2026-11-27T03:48:14",
+      "log": "qc\\gates\\puzzles_validated_1795740493.log"
+    },
+    "answer_key_verified": {
+      "class": "CODE",
+      "status": "pass",
+      "ran_at": "2026-11-27T03:48:14",
+      "log": "qc\\gates\\answer_key_verified_1795740494.log"
+    },
+    "corpus_dedup": {
+      "class": "CODE",
+      "status": "pass",
+      "ran_at": "2026-11-27T03:48:14",
+      "log": "qc\\gates\\corpus_dedup_1795740494.log"
+    },
+    "book_qc": {
+      "class": "CODE",
+      "status": "pass",
+      "ran_at": "2026-11-27T03:48:15",
+      "log": "qc\\gates\\book_qc_1795740495.log"
+    },
+    "editorial_review": {
+      "class": "EDITORIAL",
+      "status": "pass",
+      "ran_at": "2026-11-27T03:11:14",
+      "log": "Reviewed all 10 cases + assembled manuscript/answer key. Stories coherent, clues readable, explanations support answers. Findings (non-blocking): 34 redundant-clue flags across cases (over-clued); 'hard' label on C09/C10 is generous — mostly direct same/not deduction; stories are minimal. Acceptable for a pilot book.",
+      "note": "AI-assisted editorial judgment — not code proof"
+    },
+    "difficulty_calibrated": {
+      "class": "CODE",
+      "status": "pass",
+      "ran_at": "2026-11-27T03:48:14",
+      "log": "qc\\gates\\difficulty_calibrated_1795740494.log"
+    },
+    "hints_valid": {
+      "class": "CODE",
+      "status": "pass",
+      "ran_at": "2026-11-27T03:48:15",
+      "log": "qc\\gates\\hints_valid_1795740494.log"
+    },
+    "explanations_verified": {
+      "class": "CODE",
+      "status": "pass",
+      "ran_at": "2026-11-27T03:48:15",
+      "log": "qc\\gates\\explanations_verified_1795740495.log"
+    }
+  },
+  "approvals": {},
+  "checkpoints": [
+    {
+      "ts": "2026-11-27T03:09:48",
+      "stage": "INTAKE",
+      "note": "project created"
+    },
+    {
+      "ts": "2026-11-27T03:10:41",
+      "stage": "INTAKE",
+      "note": "validate run: spec_valid=FAIL, puzzles_validated=FAIL, answer_key_verified=FAIL, corpus_dedup=FAIL, book_qc=FAIL, editorial_review=FAIL, ship_approval=FAIL"
+    },
+    {
+      "ts": "2026-11-27T03:10:57",
+      "stage": "INTAKE",
+      "note": "validate run: spec_valid=pass, puzzles_validated=pass, answer_key_verified=pass, corpus_dedup=pass, book_qc=FAIL, editorial_review=FAIL, ship_approval=FAIL"
+    },
+    {
+      "ts": "2026-11-27T03:11:01",
+      "stage": "INTAKE",
+      "note": "assembled"
+    },
+    {
+      "ts": "2026-11-27T03:11:02",
+      "stage": "INTAKE",
+      "note": "validate run: spec_valid=pass, puzzles_validated=pass, answer_key_verified=pass, corpus_dedup=pass, book_qc=pass, editorial_review=FAIL, ship_approval=FAIL"
+    },
+    {
+      "ts": "2026-11-27T03:46:18",
+      "stage": "INTAKE",
+      "note": "validate run: spec_valid=pass, puzzles_validated=pass, answer_key_verified=FAIL, corpus_dedup=pass, difficulty_calibrated=pass, hints_valid=pass, explanations_verified=pass, book_qc=pass, editorial_review=pass, ship_approval=FAIL"
+    },
+    {
+      "ts": "2026-11-27T03:46:23",
+      "stage": "INTAKE",
+      "note": "validate run: answer_key_verified=FAIL"
+    },
+    {
+      "ts": "2026-11-27T03:46:38",
+      "stage": "INTAKE",
+      "note": "validate run: spec_valid=pass, puzzles_validated=pass, answer_key_verified=pass, corpus_dedup=pass, difficulty_calibrated=pass, hints_valid=pass, explanations_verified=pass, book_qc=pass, editorial_review=pass, ship_approval=FAIL"
+    },
+    {
+      "ts": "2026-11-27T03:46:42",
+      "stage": "INTAKE",
+      "note": "assembled"
+    },
+    {
+      "ts": "2026-11-27T03:46:44",
+      "stage": "INTAKE",
+      "note": "validate run: spec_valid=pass, puzzles_validated=pass, answer_key_verified=pass, corpus_dedup=pass, difficulty_calibrated=pass, hints_valid=pass, explanations_verified=pass, book_qc=pass, editorial_review=pass, ship_approval=FAIL"
+    },
+    {
+      "ts": "2026-11-27T03:48:13",
+      "stage": "INTAKE",
+      "note": "assembled"
+    },
+    {
+      "ts": "2026-11-27T03:48:15",
+      "stage": "INTAKE",
+      "note": "validate run: spec_valid=pass, puzzles_validated=pass, answer_key_verified=pass, corpus_dedup=pass, difficulty_calibrated=pass, hints_valid=pass, explanations_verified=pass, book_qc=pass, editorial_review=pass, ship_approval=FAIL"
+    }
+  ],
+  "export_history": [],
+  "next_action": "complete book spec — run `book status` for the factory's required intake fields"
+}

@@ -1,0 +1,127 @@
+{
+  "id": "C01",
+  "title": "The Gallery Theft",
+  "category": "theft",
+  "difficulty": "easy",
+  "story": "Three pieces vanished from the Marlowe Collection overnight. Security saw each suspect in exactly one room.",
+  "statement": "Match each suspect to the item they took and the room where they were seen.",
+  "categories": [
+    {
+      "name": "suspect",
+      "options": [
+        "Ada",
+        "Bram",
+        "Cora"
+      ]
+    },
+    {
+      "name": "item",
+      "options": [
+        "statue",
+        "painting",
+        "vase"
+      ]
+    },
+    {
+      "name": "room",
+      "options": [
+        "gallery",
+        "lobby",
+        "vault"
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "type": "same",
+      "a": "Ada",
+      "b": "statue"
+    },
+    {
+      "type": "same",
+      "a": "Ada",
+      "b": "gallery"
+    },
+    {
+      "type": "same",
+      "a": "Bram",
+      "b": "painting"
+    },
+    {
+      "type": "not",
+      "a": "Bram",
+      "b": "gallery"
+    },
+    {
+      "type": "same",
+      "a": "Cora",
+      "b": "lobby"
+    }
+  ],
+  "solution": {
+    "Ada": {
+      "item": "statue",
+      "room": "gallery"
+    },
+    "Bram": {
+      "item": "painting",
+      "room": "vault"
+    },
+    "Cora": {
+      "item": "vase",
+      "room": "lobby"
+    }
+  },
+  "hints": [
+    {
+      "text": "Clue 1 pins Ada's item directly.",
+      "claim": {
+        "cell": [
+          "Ada",
+          "item"
+        ],
+        "option": "statue",
+        "premise": [],
+        "cites_clues": [
+          0
+        ]
+      }
+    },
+    {
+      "text": "With Ada in the gallery and Cora in the lobby, only the vault remains for Bram.",
+      "claim": {
+        "cell": [
+          "Bram",
+          "room"
+        ],
+        "option": "vault",
+        "premise": [
+          {
+            "cell": [
+              "Ada",
+              "room"
+            ],
+            "option": "gallery"
+          },
+          {
+            "cell": [
+              "Cora",
+              "room"
+            ],
+            "option": "lobby"
+          }
+        ],
+        "cites_clues": [
+          1,
+          4
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+    "prompt_version": 2,
+    "created_at": "2026-11-27"
+  },
+  "type": "grid_logic"
+}

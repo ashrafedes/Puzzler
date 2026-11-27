@@ -1,0 +1,175 @@
+{
+  "id": "C07",
+  "title": "The Auction House",
+  "category": "theft",
+  "difficulty": "medium",
+  "story": "Four bidders each won a stolen lot with a different paddle number and a different payment method.",
+  "statement": "Match each bidder to their lot, paddle, and payment.",
+  "categories": [
+    {
+      "name": "bidder",
+      "options": [
+        "Iris",
+        "Jago",
+        "Kest",
+        "Liv"
+      ]
+    },
+    {
+      "name": "lot",
+      "options": [
+        "vase",
+        "coin",
+        "mask",
+        "map"
+      ]
+    },
+    {
+      "name": "paddle",
+      "options": [
+        "7",
+        "12",
+        "21",
+        "34"
+      ]
+    },
+    {
+      "name": "payment",
+      "options": [
+        "cash",
+        "wire",
+        "check",
+        "crypto"
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "type": "same",
+      "a": "21",
+      "b": "mask"
+    },
+    {
+      "type": "same",
+      "a": "Jago",
+      "b": "vase"
+    },
+    {
+      "type": "same",
+      "a": "Liv",
+      "b": "21"
+    },
+    {
+      "type": "same",
+      "a": "vase",
+      "b": "34"
+    },
+    {
+      "type": "same",
+      "a": "Kest",
+      "b": "coin"
+    },
+    {
+      "type": "same",
+      "a": "7",
+      "b": "coin"
+    },
+    {
+      "type": "same",
+      "a": "Liv",
+      "b": "crypto"
+    },
+    {
+      "type": "not",
+      "a": "Iris",
+      "b": "cash"
+    },
+    {
+      "type": "not",
+      "a": "Iris",
+      "b": "crypto"
+    },
+    {
+      "type": "same",
+      "a": "check",
+      "b": "7"
+    }
+  ],
+  "solution": {
+    "Iris": {
+      "lot": "map",
+      "paddle": "12",
+      "payment": "wire"
+    },
+    "Jago": {
+      "lot": "vase",
+      "paddle": "34",
+      "payment": "cash"
+    },
+    "Kest": {
+      "lot": "coin",
+      "paddle": "7",
+      "payment": "check"
+    },
+    "Liv": {
+      "lot": "mask",
+      "paddle": "21",
+      "payment": "crypto"
+    }
+  },
+  "hints": [
+    {
+      "text": "The vase went with paddle 34 \u2014 chase who won the vase.",
+      "claim": {
+        "cell": [
+          "Jago",
+          "paddle"
+        ],
+        "option": "34",
+        "premise": [
+          {
+            "cell": [
+              "Jago",
+              "lot"
+            ],
+            "option": "vase"
+          }
+        ],
+        "cites_clues": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Paddle 21's winner has the mask, and the mask was paid in crypto.",
+      "claim": {
+        "cell": [
+          "Liv",
+          "payment"
+        ],
+        "option": "crypto",
+        "premise": [
+          {
+            "cell": [
+              "Liv",
+              "paddle"
+            ],
+            "option": "21"
+          }
+        ],
+        "cites_clues": [
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+    "prompt_version": 2,
+    "created_at": "2026-11-27"
+  },
+  "type": "grid_logic"
+}

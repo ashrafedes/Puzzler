@@ -1,0 +1,15 @@
+$ python checks/check_hints.py "C:\My projects\Amzon KDP\projects\mystery_logic_puzzle\MLP-0001"
+exit=0
+
+[PASS] C01 (2 hints verified)
+[PASS] C02 (2 hints verified)
+[PASS] C03 (2 hints verified)
+[PASS] C04 (2 hints verified)
+[PASS] C05 (2 hints verified)
+[PASS] C06 (2 hints verified)
+[PASS] C07 (2 hints verified)
+[PASS] C08 (2 hints verified)
+[PASS] C09 (2 hints verified)
+[PASS] C10 (2 hints verified)
+== hint verification: 0 case(s) failed ==
+

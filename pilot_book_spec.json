@@ -1,0 +1,16 @@
+{
+  "title": "Ten Sharp Cases",
+  "target_reader": "adult logic-puzzle solvers",
+  "puzzle_count": 10,
+  "categories": [
+    {"name": "theft", "type": "grid_logic", "count": 4},
+    {"name": "espionage", "type": "grid_logic", "count": 3},
+    {"name": "smuggling", "type": "grid_logic", "count": 3}
+  ],
+  "difficulty_distribution": {"easy": 4, "medium": 4, "hard": 2},
+  "organization": "by_difficulty",
+  "explanation_depth": "step_by_step",
+  "include_hints": true,
+  "trim_size": "6x9",
+  "quality": {"near_dup_jaccard": 0.75, "name_overlap_warn": 0.5}
+}

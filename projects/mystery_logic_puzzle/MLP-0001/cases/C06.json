@@ -1,0 +1,145 @@
+{
+  "id": "C06",
+  "title": "The Harbor Case",
+  "category": "smuggling",
+  "difficulty": "medium",
+  "story": "Four ships docked carrying contraband cargo, and each smuggler captained exactly one vessel.",
+  "statement": "Match each smuggler to their ship and cargo.",
+  "categories": [
+    {
+      "name": "smuggler",
+      "options": [
+        "Nadia",
+        "Orson",
+        "Pia",
+        "Quill"
+      ]
+    },
+    {
+      "name": "ship",
+      "options": [
+        "sloop",
+        "barge",
+        "ferry",
+        "trawler"
+      ]
+    },
+    {
+      "name": "cargo",
+      "options": [
+        "silk",
+        "spice",
+        "tea",
+        "coal"
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "type": "same",
+      "a": "Orson",
+      "b": "sloop"
+    },
+    {
+      "type": "same",
+      "a": "sloop",
+      "b": "silk"
+    },
+    {
+      "type": "same",
+      "a": "Pia",
+      "b": "coal"
+    },
+    {
+      "type": "same",
+      "a": "coal",
+      "b": "trawler"
+    },
+    {
+      "type": "not",
+      "a": "Nadia",
+      "b": "barge"
+    },
+    {
+      "type": "same",
+      "a": "tea",
+      "b": "ferry"
+    }
+  ],
+  "solution": {
+    "Nadia": {
+      "ship": "ferry",
+      "cargo": "tea"
+    },
+    "Orson": {
+      "ship": "sloop",
+      "cargo": "silk"
+    },
+    "Pia": {
+      "ship": "trawler",
+      "cargo": "coal"
+    },
+    "Quill": {
+      "ship": "barge",
+      "cargo": "spice"
+    }
+  },
+  "hints": [
+    {
+      "text": "The sloop carries silk \u2014 and the sloop's captain is named.",
+      "claim": {
+        "cell": [
+          "Orson",
+          "cargo"
+        ],
+        "option": "silk",
+        "premise": [
+          {
+            "cell": [
+              "Orson",
+              "ship"
+            ],
+            "option": "sloop"
+          }
+        ],
+        "cites_clues": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Nadia can't take the barge or the sloop, and the trawler is spoken for.",
+      "claim": {
+        "cell": [
+          "Nadia",
+          "ship"
+        ],
+        "option": "ferry",
+        "premise": [
+          {
+            "cell": [
+              "Pia",
+              "ship"
+            ],
+            "option": "trawler"
+          },
+          {
+            "cell": [
+              "Orson",
+              "ship"
+            ],
+            "option": "sloop"
+          }
+        ],
+        "cites_clues": []
+      }
+    }
+  ],
+  "provenance": {
+    "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+    "prompt_version": 2,
+    "created_at": "2026-11-27"
+  },
+  "type": "grid_logic"
+}

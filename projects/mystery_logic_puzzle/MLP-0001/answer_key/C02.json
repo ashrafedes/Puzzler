@@ -1,0 +1,115 @@
+{
+ "case_id": "C02",
+ "solution": {
+  "Dara": {
+   "tool": "key",
+   "hour": "dusk"
+  },
+  "Elio": {
+   "tool": "rope",
+   "hour": "midnight"
+  },
+  "Fay": {
+   "tool": "knife",
+   "hour": "dawn"
+  }
+ },
+ "steps": [
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Dara",
+      "tool"
+     ],
+     "option": "key"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Dara",
+      "hour"
+     ],
+     "option": "dusk"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Elio",
+      "tool"
+     ],
+     "option": "rope"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Elio",
+      "hour"
+     ],
+     "option": "midnight"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Fay",
+      "tool"
+     ],
+     "option": "knife"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Fay",
+      "hour"
+     ],
+     "option": "dawn"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  }
+ ],
+ "explanation": "1. Dara's tool is key \u2014 forced by the clues and the facts already established.\n2. Dara's hour is dusk \u2014 forced by the clues and the facts already established.\n3. Elio's tool is rope \u2014 forced by the clues and the facts already established.\n4. Elio's hour is midnight \u2014 forced by the clues and the facts already established.\n5. Fay's tool is knife \u2014 forced by the clues and the facts already established.\n6. Fay's hour is dawn \u2014 forced by the clues and the facts already established.\n7. Every cell is now assigned; the completed grid is the unique solution shown above.",
+ "provenance": {
+  "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+  "prompt_version": 2,
+  "created_at": "2026-11-27"
+ }
+}

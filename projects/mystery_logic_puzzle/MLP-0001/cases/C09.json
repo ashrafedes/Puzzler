@@ -1,0 +1,232 @@
+{
+  "id": "C09",
+  "title": "The Estate Auction",
+  "category": "theft",
+  "difficulty": "hard",
+  "story": "Four collectors bid on seized contraband at a closed estate auction. The clerk's notes are scrambled \u2014 reconstruct who won what, with which paddle, paid how.",
+  "statement": "Match each bidder to their lot, paddle, and payment method.",
+  "categories": [
+    {
+      "name": "bidder",
+      "options": [
+        "Iris",
+        "Jago",
+        "Kest",
+        "Liv"
+      ]
+    },
+    {
+      "name": "lot",
+      "options": [
+        "vase",
+        "coin",
+        "mask",
+        "map"
+      ]
+    },
+    {
+      "name": "paddle",
+      "options": [
+        "7",
+        "12",
+        "21",
+        "34"
+      ]
+    },
+    {
+      "name": "payment",
+      "options": [
+        "cash",
+        "wire",
+        "check",
+        "crypto"
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "type": "or",
+      "pairs": [
+        [
+          "Kest",
+          "check"
+        ],
+        [
+          "Kest",
+          "vase"
+        ]
+      ]
+    },
+    {
+      "type": "or",
+      "pairs": [
+        [
+          "Kest",
+          "21"
+        ],
+        [
+          "Jago",
+          "34"
+        ]
+      ]
+    },
+    {
+      "type": "or",
+      "pairs": [
+        [
+          "Kest",
+          "coin"
+        ],
+        [
+          "Liv",
+          "check"
+        ]
+      ]
+    },
+    {
+      "type": "or",
+      "pairs": [
+        [
+          "Jago",
+          "21"
+        ],
+        [
+          "Liv",
+          "mask"
+        ]
+      ]
+    },
+    {
+      "type": "or",
+      "pairs": [
+        [
+          "map",
+          "wire"
+        ],
+        [
+          "12",
+          "cash"
+        ]
+      ]
+    },
+    {
+      "type": "or",
+      "pairs": [
+        [
+          "Liv",
+          "mask"
+        ],
+        [
+          "mask",
+          "crypto"
+        ]
+      ]
+    },
+    {
+      "type": "xor",
+      "pairs": [
+        [
+          "34",
+          "cash"
+        ],
+        [
+          "map",
+          "21"
+        ]
+      ]
+    },
+    {
+      "type": "xor",
+      "pairs": [
+        [
+          "mask",
+          "34"
+        ],
+        [
+          "Iris",
+          "12"
+        ]
+      ]
+    },
+    {
+      "type": "xor",
+      "pairs": [
+        [
+          "Iris",
+          "vase"
+        ],
+        [
+          "7",
+          "check"
+        ]
+      ]
+    },
+    {
+      "type": "xor",
+      "pairs": [
+        [
+          "vase",
+          "cash"
+        ],
+        [
+          "Kest",
+          "mask"
+        ]
+      ]
+    }
+  ],
+  "solution": {
+    "Iris": {
+      "lot": "map",
+      "paddle": "12",
+      "payment": "wire"
+    },
+    "Jago": {
+      "lot": "vase",
+      "paddle": "34",
+      "payment": "cash"
+    },
+    "Kest": {
+      "lot": "coin",
+      "paddle": "7",
+      "payment": "check"
+    },
+    "Liv": {
+      "lot": "mask",
+      "paddle": "21",
+      "payment": "crypto"
+    }
+  },
+  "hints": [
+    {
+      "text": "Every alternative to Liv holding paddle 21 leads to a contradiction \u2014 trace each branch.",
+      "claim": {
+        "cell": [
+          "Liv",
+          "paddle"
+        ],
+        "option": "21",
+        "premise": [],
+        "cites_clues": []
+      }
+    },
+    {
+      "text": "Assume Kest holds the mask: the xor chains collapse. So the coin is his lot.",
+      "claim": {
+        "cell": [
+          "Kest",
+          "lot"
+        ],
+        "option": "coin",
+        "premise": [],
+        "cites_clues": []
+      }
+    }
+  ],
+  "provenance": {
+    "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+    "prompt_version": 2,
+    "created_at": "2026-11-27"
+  },
+  "type": "grid_logic"
+}

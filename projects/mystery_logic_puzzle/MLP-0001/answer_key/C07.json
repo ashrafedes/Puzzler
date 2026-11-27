@@ -1,0 +1,213 @@
+{
+ "case_id": "C07",
+ "solution": {
+  "Iris": {
+   "lot": "map",
+   "paddle": "12",
+   "payment": "wire"
+  },
+  "Jago": {
+   "lot": "vase",
+   "paddle": "34",
+   "payment": "cash"
+  },
+  "Kest": {
+   "lot": "coin",
+   "paddle": "7",
+   "payment": "check"
+  },
+  "Liv": {
+   "lot": "mask",
+   "paddle": "21",
+   "payment": "crypto"
+  }
+ },
+ "steps": [
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Iris",
+      "lot"
+     ],
+     "option": "map"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Iris",
+      "paddle"
+     ],
+     "option": "12"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Iris",
+      "payment"
+     ],
+     "option": "wire"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Jago",
+      "lot"
+     ],
+     "option": "vase"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Jago",
+      "paddle"
+     ],
+     "option": "34"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Jago",
+      "payment"
+     ],
+     "option": "cash"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Kest",
+      "lot"
+     ],
+     "option": "coin"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Kest",
+      "paddle"
+     ],
+     "option": "7"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Kest",
+      "payment"
+     ],
+     "option": "check"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Liv",
+      "lot"
+     ],
+     "option": "mask"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Liv",
+      "paddle"
+     ],
+     "option": "21"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Liv",
+      "payment"
+     ],
+     "option": "crypto"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  }
+ ],
+ "explanation": "1. Iris's lot is map \u2014 forced by the clues and the facts already established.\n2. Iris's paddle is 12 \u2014 forced by the clues and the facts already established.\n3. Iris's payment is wire \u2014 forced by the clues and the facts already established.\n4. Jago's lot is vase \u2014 forced by the clues and the facts already established.\n5. Jago's paddle is 34 \u2014 forced by the clues and the facts already established.\n6. Jago's payment is cash \u2014 forced by the clues and the facts already established.\n7. Kest's lot is coin \u2014 forced by the clues and the facts already established.\n8. Kest's paddle is 7 \u2014 forced by the clues and the facts already established.\n9. Kest's payment is check \u2014 forced by the clues and the facts already established.\n10. Liv's lot is mask \u2014 forced by the clues and the facts already established.\n11. Liv's paddle is 21 \u2014 forced by the clues and the facts already established.\n12. Liv's payment is crypto \u2014 forced by the clues and the facts already established.\n13. Every cell is now assigned; the completed grid is the unique solution shown above.",
+ "provenance": {
+  "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+  "prompt_version": 2,
+  "created_at": "2026-11-27"
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "case_id": "C03",
+ "solution": {
+  "Gus": {
+   "plant": "fern",
+   "drink": "tea"
+  },
+  "Ines": {
+   "plant": "orchid",
+   "drink": "wine"
+  },
+  "Jem": {
+   "plant": "ivy",
+   "drink": "juice"
+  }
+ },
+ "steps": [
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Gus",
+      "plant"
+     ],
+     "option": "fern"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Gus",
+      "drink"
+     ],
+     "option": "tea"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Ines",
+      "plant"
+     ],
+     "option": "orchid"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Ines",
+      "drink"
+     ],
+     "option": "wine"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Jem",
+      "plant"
+     ],
+     "option": "ivy"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Jem",
+      "drink"
+     ],
+     "option": "juice"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  }
+ ],
+ "explanation": "1. Gus's plant is fern \u2014 forced by the clues and the facts already established.\n2. Gus's drink is tea \u2014 forced by the clues and the facts already established.\n3. Ines's plant is orchid \u2014 forced by the clues and the facts already established.\n4. Ines's drink is wine \u2014 forced by the clues and the facts already established.\n5. Jem's plant is ivy \u2014 forced by the clues and the facts already established.\n6. Jem's drink is juice \u2014 forced by the clues and the facts already established.\n7. Every cell is now assigned; the completed grid is the unique solution shown above.",
+ "provenance": {
+  "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+  "prompt_version": 2,
+  "created_at": "2026-11-27"
+ }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "SAMPLE-VALID-001",
+  "title": "The Garden Club",
+  "type": "grid_logic",
+  "story": "Four neighbors each keep one pet and painted their gate a different color.",
+  "categories": [
+    {"name": "name",  "options": ["Ada", "Boris", "Cleo", "Dan"]},
+    {"name": "pet",   "options": ["cat", "dog", "fox", "owl"]},
+    {"name": "color", "options": ["red", "blue", "green", "gold"]}
+  ],
+  "clues": [
+    {"type": "same", "a": "Ada", "b": "cat"},
+    {"type": "same", "a": "Boris", "b": "dog"},
+    {"type": "same", "a": "Cleo", "b": "fox"},
+    {"type": "same", "a": "cat", "b": "red"},
+    {"type": "same", "a": "dog", "b": "blue"},
+    {"type": "same", "a": "fox", "b": "green"},
+    {"type": "or",   "pairs": [["Ada", "cat"], ["Boris", "cat"]]},
+    {"type": "xor",  "pairs": [["Dan", "owl"], ["Dan", "dog"]]}
+  ],
+  "solution": {
+    "Ada":   {"pet": "cat", "color": "red"},
+    "Boris": {"pet": "dog", "color": "blue"},
+    "Cleo":  {"pet": "fox", "color": "green"},
+    "Dan":   {"pet": "owl", "color": "gold"}
+  }
+}

@@ -1,0 +1,366 @@
+{
+ "case_id": "C10",
+ "solution": {
+  "Vera": {
+   "grape": "gamay",
+   "barrel": "steel",
+   "season": "autumn"
+  },
+  "Wade": {
+   "grape": "muscat",
+   "barrel": "oak",
+   "season": "winter"
+  },
+  "Xiu": {
+   "grape": "riesling",
+   "barrel": "clay",
+   "season": "spring"
+  },
+  "Yael": {
+   "grape": "syrah",
+   "barrel": "chestnut",
+   "season": "summer"
+  }
+ },
+ "steps": [
+  {
+   "result": {
+    "contradiction": {
+     "assume": {
+      "cell": [
+       "Wade",
+       "grape"
+      ],
+      "option": "gamay"
+     }
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "contradiction": {
+     "assume": {
+      "cell": [
+       "Xiu",
+       "grape"
+      ],
+      "option": "gamay"
+     }
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "contradiction": {
+     "assume": {
+      "cell": [
+       "Yael",
+       "grape"
+      ],
+      "option": "gamay"
+     }
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Vera",
+      "grape"
+     ],
+     "option": "gamay"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "contradiction": {
+     "assume": {
+      "cell": [
+       "Vera",
+       "grape"
+      ],
+      "option": "riesling"
+     }
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "contradiction": {
+     "assume": {
+      "cell": [
+       "Wade",
+       "grape"
+      ],
+      "option": "riesling"
+     }
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "contradiction": {
+     "assume": {
+      "cell": [
+       "Yael",
+       "grape"
+      ],
+      "option": "riesling"
+     }
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Xiu",
+      "grape"
+     ],
+     "option": "riesling"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "contradiction": {
+     "assume": {
+      "cell": [
+       "Vera",
+       "grape"
+      ],
+      "option": "syrah"
+     }
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "contradiction": {
+     "assume": {
+      "cell": [
+       "Wade",
+       "grape"
+      ],
+      "option": "syrah"
+     }
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "contradiction": {
+     "assume": {
+      "cell": [
+       "Xiu",
+       "grape"
+      ],
+      "option": "syrah"
+     }
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Vera",
+      "barrel"
+     ],
+     "option": "steel"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Vera",
+      "season"
+     ],
+     "option": "autumn"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Wade",
+      "grape"
+     ],
+     "option": "muscat"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Wade",
+      "barrel"
+     ],
+     "option": "oak"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Wade",
+      "season"
+     ],
+     "option": "winter"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Xiu",
+      "barrel"
+     ],
+     "option": "clay"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Xiu",
+      "season"
+     ],
+     "option": "spring"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Yael",
+      "grape"
+     ],
+     "option": "syrah"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Yael",
+      "barrel"
+     ],
+     "option": "chestnut"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Yael",
+      "season"
+     ],
+     "option": "summer"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  }
+ ],
+ "explanation": "1. Suppose gamay belongs to Wade's row (grape): following the clues leads to a contradiction, so that placement is impossible.\n2. Suppose gamay belongs to Xiu's row (grape): following the clues leads to a contradiction, so that placement is impossible.\n3. Suppose gamay belongs to Yael's row (grape): following the clues leads to a contradiction, so that placement is impossible.\n4. Vera's grape is gamay \u2014 forced by the clues and the facts already established.\n5. Suppose riesling belongs to Vera's row (grape): following the clues leads to a contradiction, so that placement is impossible.\n6. Suppose riesling belongs to Wade's row (grape): following the clues leads to a contradiction, so that placement is impossible.\n7. Suppose riesling belongs to Yael's row (grape): following the clues leads to a contradiction, so that placement is impossible.\n8. Xiu's grape is riesling \u2014 forced by the clues and the facts already established.\n9. Suppose syrah belongs to Vera's row (grape): following the clues leads to a contradiction, so that placement is impossible.\n10. Suppose syrah belongs to Wade's row (grape): following the clues leads to a contradiction, so that placement is impossible.\n11. Suppose syrah belongs to Xiu's row (grape): following the clues leads to a contradiction, so that placement is impossible.\n12. Vera's barrel is steel \u2014 forced by the clues and the facts already established.\n13. Vera's season is autumn \u2014 forced by the clues and the facts already established.\n14. Wade's grape is muscat \u2014 forced by the clues and the facts already established.\n15. Wade's barrel is oak \u2014 forced by the clues and the facts already established.\n16. Wade's season is winter \u2014 forced by the clues and the facts already established.\n17. Xiu's barrel is clay \u2014 forced by the clues and the facts already established.\n18. Xiu's season is spring \u2014 forced by the clues and the facts already established.\n19. Yael's grape is syrah \u2014 forced by the clues and the facts already established.\n20. Yael's barrel is chestnut \u2014 forced by the clues and the facts already established.\n21. Yael's season is summer \u2014 forced by the clues and the facts already established.\n22. Every cell is now assigned; the completed grid is the unique solution shown above.",
+ "provenance": {
+  "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+  "prompt_version": 2,
+  "created_at": "2026-11-27"
+ }
+}

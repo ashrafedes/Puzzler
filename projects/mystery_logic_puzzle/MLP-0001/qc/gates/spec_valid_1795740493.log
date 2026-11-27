@@ -1,0 +1,5 @@
+$ python checks/check_spec.py "C:\My projects\Amzon KDP\projects\mystery_logic_puzzle\MLP-0001"
+exit=0
+
+[PASS] spec valid: all essentials present, distributions consistent
+

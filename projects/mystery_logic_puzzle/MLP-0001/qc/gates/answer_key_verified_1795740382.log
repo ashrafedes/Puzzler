@@ -1,0 +1,25 @@
+$ python checks/check_answer_key.py "C:\My projects\Amzon KDP\projects\mystery_logic_puzzle\MLP-0001"
+exit=1
+
+[FAIL] C01
+      explanation missing or trivially short
+[FAIL] C02
+      explanation missing or trivially short
+[FAIL] C03
+      explanation missing or trivially short
+[FAIL] C04
+      explanation missing or trivially short
+[FAIL] C05
+      explanation missing or trivially short
+[FAIL] C06
+      explanation missing or trivially short
+[FAIL] C07
+      explanation missing or trivially short
+[FAIL] C08
+      explanation missing or trivially short
+[FAIL] C09
+      explanation missing or trivially short
+[FAIL] C10
+      explanation missing or trivially short
+== 10 case(s), 10 answer-key failure(s)
+

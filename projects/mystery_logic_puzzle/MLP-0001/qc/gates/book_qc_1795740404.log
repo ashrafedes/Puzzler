@@ -1,0 +1,5 @@
+$ python checks/check_book.py "C:\My projects\Amzon KDP\projects\mystery_logic_puzzle\MLP-0001"
+exit=0
+
+[PASS] book conforms: 10 cases, spec verified, all validated, deliverables complete
+

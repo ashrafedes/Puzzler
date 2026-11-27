@@ -1,0 +1,6 @@
+$ python checks/check_corpus.py "C:\My projects\Amzon KDP\projects\mystery_logic_puzzle\MLP-0001"
+exit=0
+
+[WARN] C07 / C09: option-name overlap 100%
+== 10 cases: 0 duplicate failure(s), 1 warning(s)
+

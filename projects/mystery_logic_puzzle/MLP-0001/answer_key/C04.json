@@ -1,0 +1,115 @@
+{
+ "case_id": "C04",
+ "solution": {
+  "Kip": {
+   "coat": "grey",
+   "platform": "south"
+  },
+  "Luna": {
+   "coat": "red",
+   "platform": "north"
+  },
+  "Mo": {
+   "coat": "tan",
+   "platform": "east"
+  }
+ },
+ "steps": [
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Kip",
+      "coat"
+     ],
+     "option": "grey"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Kip",
+      "platform"
+     ],
+     "option": "south"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Luna",
+      "coat"
+     ],
+     "option": "red"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Luna",
+      "platform"
+     ],
+     "option": "north"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Mo",
+      "coat"
+     ],
+     "option": "tan"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Mo",
+      "platform"
+     ],
+     "option": "east"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  }
+ ],
+ "explanation": "1. Kip's coat is grey \u2014 forced by the clues and the facts already established.\n2. Kip's platform is south \u2014 forced by the clues and the facts already established.\n3. Luna's coat is red \u2014 forced by the clues and the facts already established.\n4. Luna's platform is north \u2014 forced by the clues and the facts already established.\n5. Mo's coat is tan \u2014 forced by the clues and the facts already established.\n6. Mo's platform is east \u2014 forced by the clues and the facts already established.\n7. Every cell is now assigned; the completed grid is the unique solution shown above.",
+ "provenance": {
+  "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+  "prompt_version": 2,
+  "created_at": "2026-11-27"
+ }
+}

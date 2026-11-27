@@ -1,0 +1,18 @@
+$ python checks/check_corpus.py C:\My projects\Amzon KDP\projects\mystery_logic_puzzle\MLP-0001
+exit=1
+
+
+Traceback (most recent call last):
+  File "C:\My projects\Amzon KDP\factories\mystery_logic_puzzle\checks\check_corpus.py", line 70, in <module>
+    sys.exit(main(Path(sys.argv[1])))
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\My projects\Amzon KDP\factories\mystery_logic_puzzle\checks\check_corpus.py", line 21, in main
+    p = json.loads((project_dir / "project.json").read_text(encoding="utf-8"))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\My\\project.json'

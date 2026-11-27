@@ -1,0 +1,122 @@
+{
+  "id": "C03",
+  "title": "The Conservatory",
+  "category": "smuggling",
+  "difficulty": "easy",
+  "story": "A botanist smuggled three rare plants out of the conservatory, each hidden under a different drink order.",
+  "statement": "Match each courier to the plant they carried and the drink they ordered.",
+  "categories": [
+    {
+      "name": "courier",
+      "options": [
+        "Gus",
+        "Ines",
+        "Jem"
+      ]
+    },
+    {
+      "name": "plant",
+      "options": [
+        "orchid",
+        "fern",
+        "ivy"
+      ]
+    },
+    {
+      "name": "drink",
+      "options": [
+        "tea",
+        "wine",
+        "juice"
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "type": "same",
+      "a": "Ines",
+      "b": "orchid"
+    },
+    {
+      "type": "same",
+      "a": "Jem",
+      "b": "ivy"
+    },
+    {
+      "type": "same",
+      "a": "Gus",
+      "b": "tea"
+    },
+    {
+      "type": "same",
+      "a": "Ines",
+      "b": "wine"
+    }
+  ],
+  "solution": {
+    "Gus": {
+      "plant": "fern",
+      "drink": "tea"
+    },
+    "Ines": {
+      "plant": "orchid",
+      "drink": "wine"
+    },
+    "Jem": {
+      "plant": "ivy",
+      "drink": "juice"
+    }
+  },
+  "hints": [
+    {
+      "text": "Ines's plant is named outright.",
+      "claim": {
+        "cell": [
+          "Ines",
+          "plant"
+        ],
+        "option": "orchid",
+        "premise": [],
+        "cites_clues": [
+          0
+        ]
+      }
+    },
+    {
+      "text": "Once orchid and ivy are placed, the fern has only one home.",
+      "claim": {
+        "cell": [
+          "Gus",
+          "plant"
+        ],
+        "option": "fern",
+        "premise": [
+          {
+            "cell": [
+              "Ines",
+              "plant"
+            ],
+            "option": "orchid"
+          },
+          {
+            "cell": [
+              "Jem",
+              "plant"
+            ],
+            "option": "ivy"
+          }
+        ],
+        "cites_clues": [
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+    "prompt_version": 2,
+    "created_at": "2026-11-27"
+  },
+  "type": "grid_logic"
+}

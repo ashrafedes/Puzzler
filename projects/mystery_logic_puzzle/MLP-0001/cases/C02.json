@@ -1,0 +1,122 @@
+{
+  "id": "C02",
+  "title": "The Locked Study",
+  "category": "espionage",
+  "difficulty": "easy",
+  "story": "Three couriers each slipped into the locked study at a different hour carrying a different tool.",
+  "statement": "Determine which courier carried which tool, and at which hour each entered.",
+  "categories": [
+    {
+      "name": "courier",
+      "options": [
+        "Dara",
+        "Elio",
+        "Fay"
+      ]
+    },
+    {
+      "name": "tool",
+      "options": [
+        "rope",
+        "key",
+        "knife"
+      ]
+    },
+    {
+      "name": "hour",
+      "options": [
+        "dusk",
+        "midnight",
+        "dawn"
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "type": "same",
+      "a": "Elio",
+      "b": "midnight"
+    },
+    {
+      "type": "same",
+      "a": "Elio",
+      "b": "rope"
+    },
+    {
+      "type": "same",
+      "a": "Fay",
+      "b": "knife"
+    },
+    {
+      "type": "same",
+      "a": "Fay",
+      "b": "dawn"
+    }
+  ],
+  "solution": {
+    "Dara": {
+      "tool": "key",
+      "hour": "dusk"
+    },
+    "Elio": {
+      "tool": "rope",
+      "hour": "midnight"
+    },
+    "Fay": {
+      "tool": "knife",
+      "hour": "dawn"
+    }
+  },
+  "hints": [
+    {
+      "text": "Elio's hour and tool are both named by the clues.",
+      "claim": {
+        "cell": [
+          "Elio",
+          "tool"
+        ],
+        "option": "rope",
+        "premise": [],
+        "cites_clues": [
+          1
+        ]
+      }
+    },
+    {
+      "text": "With Elio at midnight and Fay at dawn, dusk belongs to Dara.",
+      "claim": {
+        "cell": [
+          "Dara",
+          "hour"
+        ],
+        "option": "dusk",
+        "premise": [
+          {
+            "cell": [
+              "Elio",
+              "hour"
+            ],
+            "option": "midnight"
+          },
+          {
+            "cell": [
+              "Fay",
+              "hour"
+            ],
+            "option": "dawn"
+          }
+        ],
+        "cites_clues": [
+          0,
+          3
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+    "prompt_version": 2,
+    "created_at": "2026-11-27"
+  },
+  "type": "grid_logic"
+}

@@ -1,0 +1,7 @@
+$ python checks/check_book.py "C:\My projects\Amzon KDP\projects\mystery_logic_puzzle\MLP-0001"
+exit=1
+
+[FAIL] final/manuscript.md missing — run assemble
+[FAIL] final/answer_key.md missing — run assemble
+== book QC: 2 failure(s) ==
+

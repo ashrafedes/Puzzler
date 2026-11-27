@@ -1,0 +1,122 @@
+{
+  "id": "C04",
+  "title": "The Train Platform",
+  "category": "theft",
+  "difficulty": "easy",
+  "story": "Three pickpockets worked three platforms wearing three different coats; the station log pairs each thief with one platform.",
+  "statement": "Match each pickpocket to their coat and platform.",
+  "categories": [
+    {
+      "name": "thief",
+      "options": [
+        "Kip",
+        "Luna",
+        "Mo"
+      ]
+    },
+    {
+      "name": "coat",
+      "options": [
+        "red",
+        "grey",
+        "tan"
+      ]
+    },
+    {
+      "name": "platform",
+      "options": [
+        "north",
+        "south",
+        "east"
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "type": "same",
+      "a": "Luna",
+      "b": "red"
+    },
+    {
+      "type": "same",
+      "a": "Luna",
+      "b": "north"
+    },
+    {
+      "type": "same",
+      "a": "Mo",
+      "b": "east"
+    },
+    {
+      "type": "same",
+      "a": "Mo",
+      "b": "tan"
+    }
+  ],
+  "solution": {
+    "Kip": {
+      "coat": "grey",
+      "platform": "south"
+    },
+    "Luna": {
+      "coat": "red",
+      "platform": "north"
+    },
+    "Mo": {
+      "coat": "tan",
+      "platform": "east"
+    }
+  },
+  "hints": [
+    {
+      "text": "Luna's coat is given in the first clue.",
+      "claim": {
+        "cell": [
+          "Luna",
+          "coat"
+        ],
+        "option": "red",
+        "premise": [],
+        "cites_clues": [
+          0
+        ]
+      }
+    },
+    {
+      "text": "North and east are taken \u2014 south is the only platform left for Kip.",
+      "claim": {
+        "cell": [
+          "Kip",
+          "platform"
+        ],
+        "option": "south",
+        "premise": [
+          {
+            "cell": [
+              "Luna",
+              "platform"
+            ],
+            "option": "north"
+          },
+          {
+            "cell": [
+              "Mo",
+              "platform"
+            ],
+            "option": "east"
+          }
+        ],
+        "cites_clues": [
+          1,
+          2
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+    "prompt_version": 2,
+    "created_at": "2026-11-27"
+  },
+  "type": "grid_logic"
+}

@@ -1,0 +1,22 @@
+# Slim repo: only files the n8n review-loop workflow needs are tracked.
+# Everything else in this workspace stays untracked on disk.
+*
+!.gitignore
+!bookplatform/
+!factories/
+!tools/
+!tools/puzzle_qc/
+!tools/puzzle_qc/**
+!projects/
+!projects/mystery_logic_puzzle/
+!projects/mystery_logic_puzzle/**
+!n8n/
+!pilot_book_spec.json
+!.devin/
+!.devin/skills/
+!.devin/skills/**
+nul
+__pycache__/
+*.pyc
+n8n/browser_profile/
+n8n/audit/

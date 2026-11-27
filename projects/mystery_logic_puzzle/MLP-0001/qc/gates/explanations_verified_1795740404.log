@@ -1,0 +1,15 @@
+$ python checks/check_explanations.py "C:\My projects\Amzon KDP\projects\mystery_logic_puzzle\MLP-0001"
+exit=0
+
+[PASS] C01 (6 steps verified)
+[PASS] C02 (6 steps verified)
+[PASS] C03 (6 steps verified)
+[PASS] C04 (6 steps verified)
+[PASS] C05 (12 steps verified)
+[PASS] C06 (8 steps verified)
+[PASS] C07 (12 steps verified)
+[PASS] C08 (12 steps verified)
+[PASS] C09 (15 steps verified)
+[PASS] C10 (21 steps verified)
+== explanation verification: 0 case(s) failed ==
+

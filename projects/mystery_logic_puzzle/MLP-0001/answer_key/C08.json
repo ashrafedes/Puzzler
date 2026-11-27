@@ -1,0 +1,213 @@
+{
+ "case_id": "C08",
+ "solution": {
+  "Mose": {
+   "berth": "A1",
+   "car": "mail",
+   "item": "ledger"
+  },
+  "Nell": {
+   "berth": "C3",
+   "car": "sleeper",
+   "item": "locket"
+  },
+  "Ovi": {
+   "berth": "D4",
+   "car": "diner",
+   "item": "lantern"
+  },
+  "Petra": {
+   "berth": "B2",
+   "car": "lounge",
+   "item": "letter"
+  }
+ },
+ "steps": [
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Mose",
+      "berth"
+     ],
+     "option": "A1"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Mose",
+      "car"
+     ],
+     "option": "mail"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Mose",
+      "item"
+     ],
+     "option": "ledger"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Nell",
+      "berth"
+     ],
+     "option": "C3"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Nell",
+      "car"
+     ],
+     "option": "sleeper"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Nell",
+      "item"
+     ],
+     "option": "locket"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Ovi",
+      "berth"
+     ],
+     "option": "D4"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Ovi",
+      "car"
+     ],
+     "option": "diner"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Ovi",
+      "item"
+     ],
+     "option": "lantern"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Petra",
+      "berth"
+     ],
+     "option": "B2"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Petra",
+      "car"
+     ],
+     "option": "lounge"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Petra",
+      "item"
+     ],
+     "option": "letter"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  }
+ ],
+ "explanation": "1. Mose's berth is A1 \u2014 forced by the clues and the facts already established.\n2. Mose's car is mail \u2014 forced by the clues and the facts already established.\n3. Mose's item is ledger \u2014 forced by the clues and the facts already established.\n4. Nell's berth is C3 \u2014 forced by the clues and the facts already established.\n5. Nell's car is sleeper \u2014 forced by the clues and the facts already established.\n6. Nell's item is locket \u2014 forced by the clues and the facts already established.\n7. Ovi's berth is D4 \u2014 forced by the clues and the facts already established.\n8. Ovi's car is diner \u2014 forced by the clues and the facts already established.\n9. Ovi's item is lantern \u2014 forced by the clues and the facts already established.\n10. Petra's berth is B2 \u2014 forced by the clues and the facts already established.\n11. Petra's car is lounge \u2014 forced by the clues and the facts already established.\n12. Petra's item is letter \u2014 forced by the clues and the facts already established.\n13. Every cell is now assigned; the completed grid is the unique solution shown above.",
+ "provenance": {
+  "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+  "prompt_version": 2,
+  "created_at": "2026-11-27"
+ }
+}

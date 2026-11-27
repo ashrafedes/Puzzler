@@ -1,0 +1,22 @@
+{
+  "project_id": "MLP-0001",
+  "batches": [
+    {
+      "batch": 1,
+      "cases": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10"
+      ]
+    }
+  ],
+  "ordering": "by_difficulty",
+  "answer_section": "separate final/answer_key.md"
+}

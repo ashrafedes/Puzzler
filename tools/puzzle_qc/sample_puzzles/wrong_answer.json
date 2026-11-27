@@ -1,0 +1,25 @@
+{
+  "id": "SAMPLE-BAD-ANSWER",
+  "title": "Mislabeled Solution Key",
+  "type": "grid_logic",
+  "story": "Same clues as the valid fixture but the printed answer swaps two pets.",
+  "categories": [
+    {"name": "name",  "options": ["Ada", "Boris", "Cleo", "Dan"]},
+    {"name": "pet",   "options": ["cat", "dog", "fox", "owl"]},
+    {"name": "color", "options": ["red", "blue", "green", "gold"]}
+  ],
+  "clues": [
+    {"type": "same", "a": "Ada", "b": "cat"},
+    {"type": "same", "a": "Boris", "b": "dog"},
+    {"type": "same", "a": "Cleo", "b": "fox"},
+    {"type": "same", "a": "cat", "b": "red"},
+    {"type": "same", "a": "dog", "b": "blue"},
+    {"type": "same", "a": "fox", "b": "green"}
+  ],
+  "solution": {
+    "Ada":   {"pet": "cat", "color": "red"},
+    "Boris": {"pet": "owl", "color": "blue"},
+    "Cleo":  {"pet": "fox", "color": "green"},
+    "Dan":   {"pet": "dog", "color": "gold"}
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "SAMPLE-BAD-REF",
+  "title": "Dangling Clue",
+  "type": "grid_logic",
+  "categories": [
+    {"name": "name", "options": ["Ada", "Boris"]},
+    {"name": "pet",  "options": ["cat", "dog"]}
+  ],
+  "clues": [
+    {"type": "same", "a": "Ada", "b": "tiger"}
+  ],
+  "solution": {
+    "Ada":   {"pet": "cat"},
+    "Boris": {"pet": "dog"}
+  }
+}

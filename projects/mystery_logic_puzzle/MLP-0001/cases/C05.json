@@ -1,0 +1,175 @@
+{
+  "id": "C05",
+  "title": "The Bookshop",
+  "category": "espionage",
+  "difficulty": "medium",
+  "story": "Four agents each bought a different genre on a different day and sat in a different seat to wait for their contact.",
+  "statement": "Match each agent to their genre, day, and seat.",
+  "categories": [
+    {
+      "name": "agent",
+      "options": [
+        "Rae",
+        "Sid",
+        "Tova",
+        "Ulf"
+      ]
+    },
+    {
+      "name": "genre",
+      "options": [
+        "noir",
+        "scifi",
+        "poetry",
+        "atlas"
+      ]
+    },
+    {
+      "name": "day",
+      "options": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu"
+      ]
+    },
+    {
+      "name": "seat",
+      "options": [
+        "window",
+        "aisle",
+        "corner",
+        "stool"
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "type": "same",
+      "a": "Rae",
+      "b": "Tue"
+    },
+    {
+      "type": "same",
+      "a": "Tue",
+      "b": "window"
+    },
+    {
+      "type": "same",
+      "a": "Sid",
+      "b": "poetry"
+    },
+    {
+      "type": "same",
+      "a": "Ulf",
+      "b": "Wed"
+    },
+    {
+      "type": "same",
+      "a": "Wed",
+      "b": "stool"
+    },
+    {
+      "type": "not",
+      "a": "Tova",
+      "b": "noir"
+    },
+    {
+      "type": "not",
+      "a": "Tova",
+      "b": "atlas"
+    },
+    {
+      "type": "same",
+      "a": "Tova",
+      "b": "aisle"
+    },
+    {
+      "type": "same",
+      "a": "Thu",
+      "b": "aisle"
+    },
+    {
+      "type": "not",
+      "a": "Rae",
+      "b": "atlas"
+    }
+  ],
+  "solution": {
+    "Rae": {
+      "genre": "noir",
+      "day": "Tue",
+      "seat": "window"
+    },
+    "Sid": {
+      "genre": "poetry",
+      "day": "Mon",
+      "seat": "corner"
+    },
+    "Tova": {
+      "genre": "scifi",
+      "day": "Thu",
+      "seat": "aisle"
+    },
+    "Ulf": {
+      "genre": "atlas",
+      "day": "Wed",
+      "seat": "stool"
+    }
+  },
+  "hints": [
+    {
+      "text": "The Tuesday shopper sat at the window \u2014 find who came on Tuesday.",
+      "claim": {
+        "cell": [
+          "Rae",
+          "seat"
+        ],
+        "option": "window",
+        "premise": [
+          {
+            "cell": [
+              "Rae",
+              "day"
+            ],
+            "option": "Tue"
+          }
+        ],
+        "cites_clues": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "text": "Tova can't have noir or atlas, and Sid already took poetry \u2014 only scifi remains.",
+      "claim": {
+        "cell": [
+          "Tova",
+          "genre"
+        ],
+        "option": "scifi",
+        "premise": [
+          {
+            "cell": [
+              "Sid",
+              "genre"
+            ],
+            "option": "poetry"
+          }
+        ],
+        "cites_clues": [
+          2,
+          5,
+          6
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+    "prompt_version": 2,
+    "created_at": "2026-11-27"
+  },
+  "type": "grid_logic"
+}

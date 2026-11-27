@@ -1,0 +1,5 @@
+$ python checks/check_answer_key.py C:\My projects\Amzon KDP\projects\mystery_logic_puzzle\MLP-0001
+exit=1
+
+FAIL: no case files
+

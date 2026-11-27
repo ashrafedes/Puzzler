@@ -1,0 +1,178 @@
+{
+  "id": "C08",
+  "title": "The Night Train",
+  "category": "espionage",
+  "difficulty": "medium",
+  "story": "Four passengers rode the night express in four berths across four cars, each carrying one stolen item.",
+  "statement": "Match each passenger to their berth, car, and stolen item.",
+  "categories": [
+    {
+      "name": "passenger",
+      "options": [
+        "Mose",
+        "Nell",
+        "Ovi",
+        "Petra"
+      ]
+    },
+    {
+      "name": "berth",
+      "options": [
+        "A1",
+        "B2",
+        "C3",
+        "D4"
+      ]
+    },
+    {
+      "name": "car",
+      "options": [
+        "sleeper",
+        "diner",
+        "lounge",
+        "mail"
+      ]
+    },
+    {
+      "name": "item",
+      "options": [
+        "lantern",
+        "ledger",
+        "letter",
+        "locket"
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "type": "same",
+      "a": "Nell",
+      "b": "C3"
+    },
+    {
+      "type": "same",
+      "a": "C3",
+      "b": "sleeper"
+    },
+    {
+      "type": "same",
+      "a": "sleeper",
+      "b": "locket"
+    },
+    {
+      "type": "same",
+      "a": "Ovi",
+      "b": "D4"
+    },
+    {
+      "type": "not",
+      "a": "Ovi",
+      "b": "sleeper"
+    },
+    {
+      "type": "not",
+      "a": "Ovi",
+      "b": "lounge"
+    },
+    {
+      "type": "not",
+      "a": "Ovi",
+      "b": "mail"
+    },
+    {
+      "type": "same",
+      "a": "diner",
+      "b": "lantern"
+    },
+    {
+      "type": "same",
+      "a": "Mose",
+      "b": "ledger"
+    },
+    {
+      "type": "same",
+      "a": "mail",
+      "b": "ledger"
+    },
+    {
+      "type": "not",
+      "a": "Petra",
+      "b": "A1"
+    },
+    {
+      "type": "not",
+      "a": "Mose",
+      "b": "C3"
+    }
+  ],
+  "solution": {
+    "Mose": {
+      "berth": "A1",
+      "car": "mail",
+      "item": "ledger"
+    },
+    "Nell": {
+      "berth": "C3",
+      "car": "sleeper",
+      "item": "locket"
+    },
+    "Ovi": {
+      "berth": "D4",
+      "car": "diner",
+      "item": "lantern"
+    },
+    "Petra": {
+      "berth": "B2",
+      "car": "lounge",
+      "item": "letter"
+    }
+  },
+  "hints": [
+    {
+      "text": "Berth C3 is in the sleeper car, and the sleeper passenger carries the locket.",
+      "claim": {
+        "cell": [
+          "Nell",
+          "item"
+        ],
+        "option": "locket",
+        "premise": [
+          {
+            "cell": [
+              "Nell",
+              "berth"
+            ],
+            "option": "C3"
+          }
+        ],
+        "cites_clues": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "text": "Ovi is not in the sleeper, lounge, or mail car \u2014 only the diner remains.",
+      "claim": {
+        "cell": [
+          "Ovi",
+          "car"
+        ],
+        "option": "diner",
+        "premise": [],
+        "cites_clues": [
+          4,
+          5,
+          6
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+    "prompt_version": 2,
+    "created_at": "2026-11-27"
+  },
+  "type": "grid_logic"
+}

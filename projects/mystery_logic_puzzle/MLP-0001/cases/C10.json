@@ -1,0 +1,206 @@
+{
+  "id": "C10",
+  "title": "The Harvest Ledger",
+  "category": "smuggling",
+  "difficulty": "hard",
+  "story": "Four vintners moved contraband through a cooperative: each hid it in one varietal, aged it in one barrel, and shipped it in one season. The cellar ledger is encoded.",
+  "statement": "Match each vintner to their grape, barrel, and shipping season.",
+  "categories": [
+    {
+      "name": "vintner",
+      "options": [
+        "Vera",
+        "Wade",
+        "Xiu",
+        "Yael"
+      ]
+    },
+    {
+      "name": "grape",
+      "options": [
+        "gamay",
+        "riesling",
+        "syrah",
+        "muscat"
+      ]
+    },
+    {
+      "name": "barrel",
+      "options": [
+        "steel",
+        "oak",
+        "clay",
+        "chestnut"
+      ]
+    },
+    {
+      "name": "season",
+      "options": [
+        "autumn",
+        "winter",
+        "spring",
+        "summer"
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "type": "xor",
+      "pairs": [
+        [
+          "clay",
+          "spring"
+        ],
+        [
+          "spring",
+          "Yael"
+        ]
+      ]
+    },
+    {
+      "type": "or",
+      "pairs": [
+        [
+          "spring",
+          "Xiu"
+        ],
+        [
+          "summer",
+          "Vera"
+        ]
+      ]
+    },
+    {
+      "type": "xor",
+      "pairs": [
+        [
+          "riesling",
+          "oak"
+        ],
+        [
+          "riesling",
+          "clay"
+        ]
+      ]
+    },
+    {
+      "type": "or",
+      "pairs": [
+        [
+          "steel",
+          "Xiu"
+        ],
+        [
+          "chestnut",
+          "Yael"
+        ]
+      ]
+    },
+    {
+      "type": "or",
+      "pairs": [
+        [
+          "muscat",
+          "Wade"
+        ],
+        [
+          "chestnut",
+          "Wade"
+        ]
+      ]
+    },
+    {
+      "type": "or",
+      "pairs": [
+        [
+          "steel",
+          "autumn"
+        ],
+        [
+          "steel",
+          "spring"
+        ]
+      ]
+    },
+    {
+      "type": "or",
+      "pairs": [
+        [
+          "muscat",
+          "Xiu"
+        ],
+        [
+          "summer",
+          "Yael"
+        ]
+      ]
+    },
+    {
+      "type": "xor",
+      "pairs": [
+        [
+          "gamay",
+          "steel"
+        ],
+        [
+          "clay",
+          "Yael"
+        ]
+      ]
+    }
+  ],
+  "solution": {
+    "Vera": {
+      "grape": "gamay",
+      "barrel": "steel",
+      "season": "autumn"
+    },
+    "Wade": {
+      "grape": "muscat",
+      "barrel": "oak",
+      "season": "winter"
+    },
+    "Xiu": {
+      "grape": "riesling",
+      "barrel": "clay",
+      "season": "spring"
+    },
+    "Yael": {
+      "grape": "syrah",
+      "barrel": "chestnut",
+      "season": "summer"
+    }
+  },
+  "hints": [
+    {
+      "text": "Try placing spring with Yael \u2014 every alternative in the xor chain collapses.",
+      "claim": {
+        "cell": [
+          "Yael",
+          "season"
+        ],
+        "option": "summer",
+        "premise": [],
+        "cites_clues": []
+      }
+    },
+    {
+      "text": "Branch on Vera's barrel: only steel survives the or/xor cascade.",
+      "claim": {
+        "cell": [
+          "Vera",
+          "barrel"
+        ],
+        "option": "steel",
+        "premise": [],
+        "cites_clues": []
+      }
+    }
+  ],
+  "provenance": {
+    "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+    "prompt_version": 2,
+    "created_at": "2026-11-27"
+  },
+  "type": "grid_logic"
+}

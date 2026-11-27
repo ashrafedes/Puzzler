@@ -1,0 +1,21 @@
+{
+  "id": "SAMPLE-BAD-AMBIGUOUS",
+  "title": "Under-Clued Garden",
+  "type": "grid_logic",
+  "story": "Deliberately under-constrained fixture: many solutions exist.",
+  "categories": [
+    {"name": "name",  "options": ["Ada", "Boris", "Cleo", "Dan"]},
+    {"name": "pet",   "options": ["cat", "dog", "fox", "owl"]},
+    {"name": "color", "options": ["red", "blue", "green", "gold"]}
+  ],
+  "clues": [
+    {"type": "same", "a": "Ada", "b": "cat"},
+    {"type": "not",  "a": "Boris", "b": "red"}
+  ],
+  "solution": {
+    "Ada":   {"pet": "cat", "color": "red"},
+    "Boris": {"pet": "dog", "color": "blue"},
+    "Cleo":  {"pet": "fox", "color": "green"},
+    "Dan":   {"pet": "owl", "color": "gold"}
+  }
+}

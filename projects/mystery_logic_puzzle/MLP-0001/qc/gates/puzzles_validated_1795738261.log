@@ -1,0 +1,49 @@
+$ python checks/check_puzzles.py "C:\My projects\Amzon KDP\projects\mystery_logic_puzzle\MLP-0001"
+exit=0
+
+[PASS] C01                solutions=1 unique=True
+      editorial: clue[1] is redundant (removing it keeps the solution unique)
+      editorial: clue[3] is redundant (removing it keeps the solution unique)
+[PASS] C02                solutions=1 unique=True
+      editorial: clue[0] is redundant (removing it keeps the solution unique)
+      editorial: clue[1] is redundant (removing it keeps the solution unique)
+      editorial: clue[4] is redundant (removing it keeps the solution unique)
+[PASS] C03                solutions=1 unique=True
+      editorial: clue[0] is redundant (removing it keeps the solution unique)
+      editorial: clue[4] is redundant (removing it keeps the solution unique)
+[PASS] C04                solutions=1 unique=True
+      editorial: clue[0] is redundant (removing it keeps the solution unique)
+      editorial: clue[3] is redundant (removing it keeps the solution unique)
+[PASS] C05                solutions=1 unique=True
+      editorial: clue[0] is redundant (removing it keeps the solution unique)
+      editorial: clue[2] is redundant (removing it keeps the solution unique)
+      editorial: clue[7] is redundant (removing it keeps the solution unique)
+      editorial: clue[10] is redundant (removing it keeps the solution unique)
+[PASS] C06                solutions=1 unique=True
+      editorial: clue[1] is redundant (removing it keeps the solution unique)
+      editorial: clue[2] is redundant (removing it keeps the solution unique)
+      editorial: clue[4] is redundant (removing it keeps the solution unique)
+      editorial: clue[6] is redundant (removing it keeps the solution unique)
+      editorial: clue[7] is redundant (removing it keeps the solution unique)
+[PASS] C07                solutions=1 unique=True
+      editorial: clue[9] is redundant (removing it keeps the solution unique)
+[PASS] C08                solutions=1 unique=True
+      editorial: clue[6] is redundant (removing it keeps the solution unique)
+      editorial: clue[9] is redundant (removing it keeps the solution unique)
+[PASS] C09                solutions=1 unique=True
+      editorial: clue[0] is redundant (removing it keeps the solution unique)
+      editorial: clue[1] is redundant (removing it keeps the solution unique)
+      editorial: clue[8] is redundant (removing it keeps the solution unique)
+      editorial: clue[10] is redundant (removing it keeps the solution unique)
+[PASS] C10                solutions=1 unique=True
+      editorial: clue[0] is redundant (removing it keeps the solution unique)
+      editorial: clue[1] is redundant (removing it keeps the solution unique)
+      editorial: clue[3] is redundant (removing it keeps the solution unique)
+      editorial: clue[4] is redundant (removing it keeps the solution unique)
+      editorial: clue[6] is redundant (removing it keeps the solution unique)
+      editorial: clue[7] is redundant (removing it keeps the solution unique)
+      editorial: clue[9] is redundant (removing it keeps the solution unique)
+      editorial: clue[10] is redundant (removing it keeps the solution unique)
+      editorial: clue[11] is redundant (removing it keeps the solution unique)
+== 10 case(s), 0 failed — report: qc/puzzle_validation.json
+

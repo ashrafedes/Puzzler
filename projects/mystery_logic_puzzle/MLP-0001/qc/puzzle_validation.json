@@ -1,0 +1,93 @@
+{
+  "C01": {
+    "file": "C01.json",
+    "pass": true,
+    "solutions": 1,
+    "unique": true,
+    "errors": [],
+    "editorial": [
+      "clue[1] is redundant (removing it keeps the solution unique)",
+      "clue[3] is redundant (removing it keeps the solution unique)"
+    ]
+  },
+  "C02": {
+    "file": "C02.json",
+    "pass": true,
+    "solutions": 1,
+    "unique": true,
+    "errors": [],
+    "editorial": []
+  },
+  "C03": {
+    "file": "C03.json",
+    "pass": true,
+    "solutions": 1,
+    "unique": true,
+    "errors": [],
+    "editorial": []
+  },
+  "C04": {
+    "file": "C04.json",
+    "pass": true,
+    "solutions": 1,
+    "unique": true,
+    "errors": [],
+    "editorial": []
+  },
+  "C05": {
+    "file": "C05.json",
+    "pass": true,
+    "solutions": 1,
+    "unique": true,
+    "errors": [],
+    "editorial": []
+  },
+  "C06": {
+    "file": "C06.json",
+    "pass": true,
+    "solutions": 1,
+    "unique": true,
+    "errors": [],
+    "editorial": []
+  },
+  "C07": {
+    "file": "C07.json",
+    "pass": true,
+    "solutions": 1,
+    "unique": true,
+    "errors": [],
+    "editorial": [
+      "clue[8] is redundant (removing it keeps the solution unique)"
+    ]
+  },
+  "C08": {
+    "file": "C08.json",
+    "pass": true,
+    "solutions": 1,
+    "unique": true,
+    "errors": [],
+    "editorial": [
+      "clue[4] is redundant (removing it keeps the solution unique)",
+      "clue[6] is redundant (removing it keeps the solution unique)",
+      "clue[11] is redundant (removing it keeps the solution unique)"
+    ]
+  },
+  "C09": {
+    "file": "C09.json",
+    "pass": true,
+    "solutions": 1,
+    "unique": true,
+    "errors": [],
+    "editorial": [
+      "clue[5] is redundant (removing it keeps the solution unique)"
+    ]
+  },
+  "C10": {
+    "file": "C10.json",
+    "pass": true,
+    "solutions": 1,
+    "unique": true,
+    "errors": [],
+    "editorial": []
+  }
+}

@@ -1,0 +1,115 @@
+{
+ "case_id": "C01",
+ "solution": {
+  "Ada": {
+   "item": "statue",
+   "room": "gallery"
+  },
+  "Bram": {
+   "item": "painting",
+   "room": "vault"
+  },
+  "Cora": {
+   "item": "vase",
+   "room": "lobby"
+  }
+ },
+ "steps": [
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Ada",
+      "item"
+     ],
+     "option": "statue"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Ada",
+      "room"
+     ],
+     "option": "gallery"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Bram",
+      "item"
+     ],
+     "option": "painting"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Bram",
+      "room"
+     ],
+     "option": "vault"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Cora",
+      "item"
+     ],
+     "option": "vase"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  },
+  {
+   "result": {
+    "place": {
+     "cell": [
+      "Cora",
+      "room"
+     ],
+     "option": "lobby"
+    }
+   },
+   "basis": {
+    "clues": [],
+    "derived_from": []
+   }
+  }
+ ],
+ "explanation": "1. Ada's item is statue \u2014 forced by the clues and the facts already established.\n2. Ada's room is gallery \u2014 forced by the clues and the facts already established.\n3. Bram's item is painting \u2014 forced by the clues and the facts already established.\n4. Bram's room is vault \u2014 forced by the clues and the facts already established.\n5. Cora's item is vase \u2014 forced by the clues and the facts already established.\n6. Cora's room is lobby \u2014 forced by the clues and the facts already established.\n7. Every cell is now assigned; the completed grid is the unique solution shown above.",
+ "provenance": {
+  "prompt": "case_design_v2+clue_set_v2+hints_v2+explanation_v2",
+  "prompt_version": 2,
+  "created_at": "2026-11-27"
+ }
+}
